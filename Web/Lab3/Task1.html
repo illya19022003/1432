@@ -1,0 +1,14 @@
+<script>
+    var obj = {
+        className: 'open menu'
+    }
+    function addClass(obj, str) {
+        if(obj.className.split(" ").indexOf(str) == -1)
+            return obj.className += ' ' + str
+        return obj.className
+    }
+    addClass(obj, 'new')
+    addClass(obj, 'open')
+    addClass(obj, 'me')
+    alert(obj.className)
+</script>

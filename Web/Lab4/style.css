@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+}
+#FirstTr {
+    background-color: rgb(46, 46, 46);
+}
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}

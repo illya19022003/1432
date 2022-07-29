@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Task5.js"></script>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            rotate: 180deg;
+            background-color: darkblue;
+            position: absolute;
+            top: 200px;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    width:
+    0<input id="width" type="range" min="0" max="500" value="250" step="1" oninput="onWidth()">500
+    <span id="sWidth" style="border: 2px solid black;">250</span><br>
+    height:
+    0<input id="height" type="range" min="0" max="500" value="250" step="1" oninput="onHeight()">500
+    <span id="sHeight" style="border: 2px solid black;">250</span><br>
+    rotate:
+    0<input id="rotate" type="range" min="0" max="360" value="180" step="1" oninput="onRotate()">360
+    <span id="sRotate" style="border: 2px solid black;">180</span><br>
+    <div></div>
+</body>
+</html>

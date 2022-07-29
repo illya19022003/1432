@@ -1,0 +1,7 @@
+<script>
+    function toCamelCase(str){
+        str = str.replace(/_./g, (u) => u.toUpperCase())
+        return str.replace(/_/g, "")
+    }
+    console.log(toCamelCase("i_want_some_pizza"))
+</script>

@@ -1,0 +1,90 @@
+<script>
+    arr = []
+    function Subj(name, x) {
+        this.name = name
+        this.x = x
+        this.zachet = x >= 60
+    }
+    arr.push(subj1 = new Subj('Ukr',65))
+    arr.push(subj2 = new Subj('Math', 30))
+    arr.push(subj3 = new Subj('Op', 90))
+    arr.push(subj4 = new Subj('Web', 50))
+    // 1
+    console.log('1)')
+    function TrueSubjList(arr) {
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i].zachet == true) {
+                console.log(arr[i])
+            }
+        }
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i].zachet == false) {
+                console.log(arr[i])
+            }
+        }
+    }
+    TrueSubjList(arr)
+    //2
+    console.log('2)')
+    function AddSubj(arr, name, x) {
+        flag = false
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i].name == name) {
+                flag = true
+                arr[i].x = x
+                arr[i].zachet = x >= 60
+            }
+        }
+        if (flag == false) {
+            arr.push(subj = new Subj(name, x))
+        }
+        return arr
+    }
+    AddSubj(arr, 'Math', 65)
+    AddSubj(arr, 'OOP', 93)
+    console.log(arr)
+    //3
+    console.log('3)')
+    function AvarageGrade(arr) {
+        sum = 0
+        for (i in arr) {
+            sum += arr[i].x
+        }
+        return sum / arr.length
+    }
+    console.log(AvarageGrade(arr))
+    //4
+    console.log('4)')
+    function NeZachet(arr) {
+        sum = 0
+        for (i in arr) {
+            if (arr[i].zachet == false) {
+                sum += 1
+            }
+        }
+        return sum
+    }
+    console.log(NeZachet(arr))
+    //5
+    console.log('5)')
+    function MaxGrade(arr) {
+        max = 0
+        for (i in arr) {
+            if (arr[i].x > max) {
+                max = arr[i].x
+            }
+        }
+        return max
+    }
+    console.log(MaxGrade(arr))
+    //6
+    console.log('6)')
+    function FindGrade(arr, num) {
+        for(i in arr){
+            if(arr[i].x == num){
+                console.log(arr[i])
+            }
+        }
+    }
+    FindGrade(arr, 65)
+</script>

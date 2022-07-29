@@ -1,0 +1,10 @@
+<script>
+    vasya = {name: 'Вася', age: 23}
+    masha = {name: 'Маша', age: 18}
+    vovochka = {name: 'Вовочка', age: 6}
+
+    people = [vasya, masha, vovochka]
+    console.log(people.sort(function(a, b){
+        return a.age - b.age
+    }))
+</script>

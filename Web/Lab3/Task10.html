@@ -1,0 +1,13 @@
+<script>
+    function Unique(arr){
+        uniqArr = []
+        for(i in arr){
+            if(uniqArr.indexOf(arr[i]) == -1){
+                uniqArr.push(arr[i])
+            }
+        }
+        return uniqArr
+    }
+    strings = ["C++", "C#", "C++", "C#", "C", "C++", "JavaScript", "C++", "JavaScript"]
+    alert(Unique(strings))
+</script>

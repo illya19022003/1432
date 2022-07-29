@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="Task1.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 350px;
+            height: 350px;
+            position: absolute;
+        }
+        .blocks {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        span {
+            position: relative;
+            left: 450px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <select oninput="onInput()">
+        <option selected disabled value="3">Виберіть кількість блоків</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <div id="default"></div>
+    <span></span>
+    <div id="new" style="left:500px;"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<script>
+    function Dog(name, breed, age){
+        this.name = name
+        this.breed = breed
+        this.age = age
+    }
+    function DogSays(dog){
+        if(dog.age < 1){
+            return 'Тяф'
+        }
+        else if(dog.age < 3){
+            return 'Гав'
+        }
+        else{
+            return 'Ррр'
+        }
+    }
+
+    dog1 = new Dog('Рекс', 'Такса', 0.5)
+    dog2 = new Dog('Цезарь', 'Алабай', 2)
+    dog3 = new Dog('Аксель', 'Доберман', 5)
+
+    console.log(DogSays(dog2))
+    console.log(DogSays(dog1))
+    console.log(DogSays(dog3))
+</script>

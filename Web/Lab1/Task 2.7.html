@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function truncate(str, num) {
+        if (str.length > num) {
+            str = str.slice(0, num - 1) + "…"
+        }
+        return str
+    }
+
+    s = prompt("Текст:")
+    num = +prompt("Скоротити до к-ть символiв:")
+    alert(truncate(s, num))
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<script>
+    function filterRangeInPlace(arr, a, b) {
+        if(a > b){
+            tmp = a
+            a = b
+            b = tmp
+        }
+        for(i = 0; i < arr.length; i++){
+            if(arr[i] < a || arr[i] > b){
+                if(i == 0){
+                    arr.splice(0,1)
+                    i--
+                }
+                else {
+                    arr.splice(i, i)
+                    i--
+                }
+            }
+        }
+        return arr
+    }
+    arr = [5, 6, 3, 8, 1, 4]
+    filterRangeInPlace(arr, 1, 4)
+    alert(arr)
+</script>
